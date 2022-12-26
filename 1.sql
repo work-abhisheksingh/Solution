@@ -1,4 +1,4 @@
-create table Director
+create table Directors
 (
     Dir_id  int not null AUTO_INCREMENT primary key,
     password varchar(20),
@@ -23,7 +23,7 @@ create table Faculties
 );
 create table Students
 (
-    Stud_Id  int primary key AUTO_INCREMENT,
+    Stud_Id  int not null primary key AUTO_INCREMENT,
     pwd varchar(50),
     name varchar(50),
     age int not null,
@@ -34,7 +34,7 @@ create table Students
 );
 create table Courses
 (
-    Course_Id int  primary key,
+    Course_Id int not null  primary key Auto_Increment,
     Name varchar(50),
     Duration varchar(20),
     Fees decimal(9,2),
